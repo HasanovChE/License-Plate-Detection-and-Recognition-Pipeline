@@ -1,0 +1,32 @@
+# --- Detection ---
+# 8.3.0 pinned an old numpy<2.0 upper bound; 8.3.4+ removed it, needed for numpy 2.x / Python 3.14
+ultralytics>=8.3.4
+
+# --- Core / Image processing ---
+# headless build: no GUI/display deps needed (works in Codespaces, Docker, CI)
+opencv-python-headless
+numpy
+Pillow
+
+# --- OCR ---
+pytesseract
+easyocr
+
+# --- Data / Config ---
+pandas
+PyYAML
+python-dotenv
+
+# --- API ---
+fastapi
+uvicorn
+python-multipart
+
+# --- Evaluation / Metrics ---
+scikit-learn
+jiwer
+rapidfuzz
+matplotlib
+
+# --- Testing ---
+pytest

@@ -1,0 +1,25 @@
+model: 
+  path: models/best.pt 
+  confidence: 0.35 
+  iou_threshold: 0.45 
+ 
+crop: 
+  padding_ratio: 0.15 
+ 
+ocr: 
+  engine: tesseract 
+  psm: 7 
+  preprocess: true 
+ 
+validation: 
+  country: auto 
+ 
+database: 
+  enabled: true 
+  path: parking.db 
+ 
+video: 
+  frame_skip: 3 
+ 
+logging: 
+  level: INFO 

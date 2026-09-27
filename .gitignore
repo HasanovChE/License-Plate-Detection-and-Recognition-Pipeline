@@ -1,0 +1,50 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# --- Virtual environment ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Environment secrets ---
+.env
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- Testing / cache ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# --- Ultralytics training run logs (large, regenerable from Colab) ---
+runs/
+
+# --- Runtime-generated parking log database ---
+parking.db
+
+# --- Large / regenerable outputs ---
+# (outputs/evaluation/ and outputs/failures/ are KEPT — they're submission evidence)
+outputs/crops/
+outputs/videos/
+
+# --- Raw / intermediate dataset staging ---
+# (data/images, data/labels, data/metadata ARE kept — required dataset deliverable)
+data/raw/
+data/processed/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
